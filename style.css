@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #000000;
+}
+
+.container {
+	position: relative;
+	width: 1300px;
+	height: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	position: relative;
+	background-image: url(navigation.jpg);
+	height: 100px;
+	width: 100%;
+}
+
+.start {
+	position: absolute;
+	height: 70px;
+	width: 15%;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-150%);
+    cursor: pointer;
+}
+
+h1, h2{
+    text-shadow: 7px 4px 6px #000000;
+    color: #ddd4c7;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+
+.reset {
+	position: absolute;
+	height: 70px;
+	width: 15%;
+	top: 15px;
+	right: 50%;
+	transform: translateX(150%);
+    cursor: pointer;
+}
+
+main {
+	height: 860px;
+}
+
+.game {
+	background-image: url(tlo.jpg);
+	position: absolute;
+	height: 860px;
+	width: 1000px;
+}
+
+.desk {
+	position: absolute;
+	width: 300px;
+	height: 860px;
+	background-image: url(panel.jpg);
+	background-size: cover;
+	left: 1000px;
+}
+
+.card {
+	position: absolute;
+	width: 160px;
+	height: 250px;
+	top: 150px;
+	left: 1075px;
+	background-image: url(back.jpg);
+	box-shadow: 5px 5px 10px #000000;
+    cursor: pointer;
+}
+
+.wygrana {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.72);
+    top: 0px;
+    width: 100%;
+    height: 960px;
+    visibility: hidden;
+}
+
+h3 {
+    position: relative;
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-150%);
+    font-size: 200px;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1300px){
+    body{
+        zoom: 75%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        zoom: 50%;
+    }
+}
+@media screen and (max-width: 650px){
+    body{
+        zoom: 30%;
+    }
+}
